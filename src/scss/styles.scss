@@ -1,0 +1,91 @@
+// Import all of Bootstrap’s CSS
+@import "bootstrap/scss/bootstrap";
+
+// .collapse {
+// .navbar-nav {
+//     display: flex;
+//     justify-content: center;
+//     font-size: 1rem;
+// }
+// }
+
+.container {
+    .hero-section {
+        .hero-txt {
+            .hero-txt-head {
+                font-size: 3rem;
+
+                .img-1 {
+                    width: 7rem;
+                }
+            }
+
+            .hero-txt-para {
+                font-size: 1.2rem;
+                color: #727272;
+            }
+        }
+
+        .hero-btn,
+        .img-2 {
+            height: 40px;
+            padding: 0 20px;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            white-space: nowrap;
+        }
+
+
+        .img-2 {
+            object-fit: contain;
+        }
+    }
+}
+
+
+
+@media screen and (min-width:1440px) {
+    .hero-section {
+        .hero-txt {
+            .hero-txt-head {
+                font-size: 4.4rem;
+
+                img {
+                    width: 9rem;
+                }
+            }
+
+            .hero-txt-para {
+                font-size: 1.2rem;
+                color: #727272;
+            }
+        }
+    }
+}
+
+
+.container {
+    @media screen and (min-width:1920px) {
+        width: 1655px !important;
+        max-width: 1655px !important;
+
+        .hero-section {
+            .hero-txt {
+                .hero-txt-head {
+                    font-size: 5rem;
+
+                    img {
+                        width: 11rem;
+                    }
+                }
+
+                .hero-txt-para {
+                    font-size: 1.5rem;
+                    color: #727272;
+                }
+            }
+        }
+    }
+}
