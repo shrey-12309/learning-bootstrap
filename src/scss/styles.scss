@@ -8,8 +8,15 @@
 //     font-size: 1rem;
 // }
 // }
+body {
+    font-family: 'Poppins', sans-serif;
+}
 
 .container {
+    p {
+        color: #727272;
+    }
+
     .hero-section {
         .hero-txt {
             .hero-txt-head {
@@ -22,7 +29,7 @@
 
             .hero-txt-para {
                 font-size: 1.2rem;
-                color: #727272;
+                // color: #727272;
             }
         }
 
@@ -49,9 +56,54 @@
             padding: 0.7rem;
         }
     }
+
+    .optimising {
+        h3 {
+            font-size: 2rem;
+            font-weight: 400;
+
+            span {
+                color: #6F77F1;
+            }
+        }
+    }
+
+    .solution-text {
+        h3 {
+            font-size: 2rem;
+
+            span {
+                color: #6F77F1;
+            }
+        }
+    }
+
+    button {
+        font-size: 1.2rem;
+    }
+
+    .feature-boxes {
+
+        h3 {
+            font-size: 20px;
+        }
+
+        p {
+            font-size: 17px;
+        }
+    }
 }
 
 
+@media screen and (min-width:1024px) {
+    .optimising {
+        .optimising-inner-containers {
+            img {
+                width: 60px;
+            }
+        }
+    }
+}
 
 @media screen and (min-width:1440px) {
     .hero-section {
@@ -92,6 +144,34 @@
                     font-size: 1.5rem;
                     color: #727272;
                 }
+            }
+        }
+
+        .post-hero {
+            .post-hero-boxes {
+
+                p {
+                    font-size: 17px;
+                }
+            }
+        }
+
+        .optimising {
+            h3 {
+                font-size: 55px;
+                font-weight: 500;
+
+                p {
+                    width: 827px;
+                    height: 60px;
+                    font-size: 20px;
+                }
+            }
+        }
+
+        .feature-boxes {
+            p {
+                width: 75%;
             }
         }
     }
