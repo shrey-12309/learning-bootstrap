@@ -124,6 +124,79 @@ body {
     .choosing {
         margin-top: 5rem;
     }
+
+    .plans {
+        .plans-txt {
+            h3 {
+                font-size: 2.3rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+
+            .plans-box {
+                background-color: white;
+                padding-top: 1.4rem;
+                padding: 2rem 2rem 0rem 2rem;
+
+                h4 {
+                    font-size: 22px;
+                    color: #6F77F1;
+                }
+
+                h3 {
+                    span {
+                        font-size: 1rem;
+                    }
+                }
+
+                button {
+                    font-size: 0.8rem;
+                    background-color: white;
+                    border: 1px solid black;
+                    margin-top: 1.2rem;
+                    margin-bottom: 2.6rem;
+
+                }
+
+
+            }
+
+            .plans-box:hover {
+                background-color: #6F77F1;
+                color: white;
+
+                h4,
+                h3,
+                p {
+                    color: white;
+                }
+
+                button {
+                    background-color: yellow;
+                }
+            }
+        }
+    }
+
+    .exp-team {
+        .exp-txt {
+            h3 {
+                font-size: 2.4rem;
+
+                span {
+                    color: #6F77F1;
+                }
+            }
+
+            .members {
+
+                border: 1px solid rgb(198, 197, 197);
+            }
+
+        }
+    }
 }
 
 .testimonials-section {
