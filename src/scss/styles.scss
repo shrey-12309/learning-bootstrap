@@ -10,6 +10,16 @@ body {
         color: #727272;
     }
 
+    .navbar-brand {
+        font-size: 30px;
+    }
+
+    .navbar-nav {
+        .nav-item {
+            font-size: 24px;
+        }
+    }
+
     .hero-section {
         .hero-txt {
             .hero-txt-head {
@@ -382,7 +392,29 @@ body {
         margin: 0 auto;
     }
 
+    #pop-up {
+        width: fit-content;
+        height: fit-content;
+        border: 2px solid white;
+        background-color: #6F77F1;
+        color: white;
+        padding: 0.8rem;
+        border-radius: 1.3rem;
+        // font-size: 1.2rem;
+        position: fixed;
+        bottom: -200px;
+        transition: bottom 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    }
+
+
+    #pop-up.show {
+        bottom: 200px;
+        opacity: 1;
+    }
+
 }
+
+
 
 .testimonials-section {
     background-color: var.$background-color;

@@ -12,19 +12,19 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg py-3">
-    <div class="container d-flex justify-content-between align-items-center">
-      <a class="navbar-brand fw-bold fs-4" href="#">nuvosa<span class="text-danger">.</span></a>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container d-flex justify-content-between align-items-center mt-4">
+      <a class="navbar-brand fw-normal" href="#">nuvosa<span class="text-danger">.</span></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navMenu">
         <ul class="navbar-nav ms-auto mx-5 mb-2 mb-lg-0 gap-5 me-5">
-          <li class="nav-item"><a class="nav-link fs-6" href="#">Home</a></li>
-          <li class="nav-item"><a class="nav-link fs-6" href="#">Projects</a></li>
-          <li class="nav-item"><a class="nav-link fs-6" href="#">Blog</a></li>
-          <li class="nav-item"><a class="nav-link fs-6" href="#">Pricing</a></li>
-          <li class="nav-item"><a class="nav-link fs-6" href="#">Contact</a></li>
+          <li class="nav-item"><a class="nav-link " href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
+          <li class="nav-item"><a class="nav-link " href="#">Blog</a></li>
+          <li class="nav-item"><a class="nav-link " href="#">Pricing</a></li>
+          <li class="nav-item"><a class="nav-link " href="#">Contact</a></li>
         </ul>
         <form class=" ms-5 d-flex justify-content-end" role="search">
           <input class="form-control me-2 w-50 rounded-0 text-center" type="search" placeholder="Let's Talk
@@ -36,6 +36,8 @@
       </div>
     </div>
   </nav>
+
+
   <section class="container d-flex justify-content-center align-items-center">
     <div class="hero-section row align-items-center justify-content-center px-2">
       <div class="hero-txt col-12 col-md-6">
@@ -631,18 +633,26 @@
       <h2 class="mb-3 pt-5 fw-normal">Subscribe & Find The Perfect Cosmetics</h2>
       <p class="mb-4">Enter Your Email And Get Updated New Products & News</p>
 
-      <form class="d-flex flex-wrap justify-content-center gap-3 pb-5">
-        <input type="text" class="form-control rounded-1" placeholder="Name" style="max-width: 250px;">
-        <input type="email" class="form-control rounded-1" placeholder="Email Address" style="max-width: 250px;">
+      <form id="subscribe-form" class="d-flex flex-wrap justify-content-center gap-3 pb-5" action="/">
+        <input id="Name" type="text" class="form-control rounded-1" placeholder="Name" style="max-width: 250px;"
+          required>
+        <input id="Email" type="email" class="form-control rounded-1" placeholder="Email Address"
+          style="max-width: 250px;" required>
         <button class="btn btn-primary rounded-1"
           style="background-color: #7B61FF; border: none; height: 100%;">Subscribe</button>
       </form>
+
+    </div>
+  </section>
+  <section class="container d-flex justify-content-center align-items-center">
+    <div id="pop-up" class="text-center" hidden>
+      <span>Form Submitted Successfully</span>
     </div>
   </section>
 
   <footer class="py-5 text-center">
     <div class="container">
-      <h4 class="fw-bold mb-4">nuvosa<span style="color: #FF4D5A;">●</span></h4>
+      <h4 class="fw-normal mb-4">nuvosa<span style="color: #FF4D5A;">●</span></h4>
 
       <ul class="list-inline mb-4">
         <li class="list-inline-item mx-3"><a href="#" class="text-dark text-decoration-none">Overview</a></li>
