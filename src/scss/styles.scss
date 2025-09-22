@@ -761,6 +761,8 @@ body {
         width: 1655px !important;
         max-width: 1655px !important;
 
+
+
         .hero-section {
             .hero-txt {
                 .hero-txt-head {
@@ -811,5 +813,45 @@ body {
         }
 
 
+    }
+}
+
+@media screen and (min-width:1920px) {
+    .navbar {
+        margin-top: 2rem;
+
+        .navbar-brand {
+            margin-left: -13px;
+            font-size: 40px;
+        }
+
+        #navMenu {
+            ul {
+                margin-left: 21.8rem !important;
+            }
+        }
+
+        form {
+            margin-left: 7rem !important;
+
+            input {
+                font-size: 24px;
+                padding-left: 2.7rem;
+
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+                width: 210px !important;
+                height: fit-content;
+                margin-right: 1rem !important;
+            }
+
+            button {
+                padding-left: 2rem;
+                padding-right: 2rem;
+                // margin-left: 1rem;
+                margin-right: -2rem !important;
+
+            }
+        }
     }
 }
