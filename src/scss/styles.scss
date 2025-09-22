@@ -131,6 +131,7 @@ body {
         .optimising-inner-containers:hover {
             transform: scale(1.11);
             transition: 0.2s transform;
+            border-bottom: 2px solid #6F77F1;
         }
     }
 
@@ -149,6 +150,9 @@ body {
     }
 
     .feature-boxes {
+        padding-left: 1.3rem;
+        margin-bottom: 3rem;
+        padding-bottom: 2rem;
 
         h3 {
             font-size: 20px;
@@ -162,6 +166,8 @@ body {
     .feature-boxes:hover {
         transform: scale(1.1);
         transition: 0.2s transform;
+        box-shadow: 0px 34px 50px -17px #0216051A;
+
     }
 
     .choosing {
@@ -177,6 +183,7 @@ body {
     .icon-card:hover {
         transform: scale(1.01);
         transition: 0.2s transform;
+
     }
 
     .seo {
