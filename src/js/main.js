@@ -6,32 +6,41 @@ import * as bootstrap from 'bootstrap'
 
 import Alert from 'bootstrap/js/dist/alert';
 
-// or, specify which plugins you need:
 import { Tooltip, Toast, Popover } from 'bootstrap';
 
 const form = document.getElementById("subscribe-form");
+const pop = document.getElementById("pop-up");
 
 form.addEventListener('submit', function (event) {
     event.preventDefault();
 
+    let nameInput = document.getElementById("Name");
+    let emailInput = document.getElementById("Email");
 
-    let subscribeName = document.getElementById("Name").value.trim();
-    let subscribeEmail = document.getElementById("Email").value.trim();
+    let subscribeName = nameInput.value.trim();
+    let subscribeEmail = emailInput.value.trim();
 
+
+    nameInput.classList.remove("input-error");
+    emailInput.classList.remove("input-error");
+
+    let isValid = true;
 
     if (!validateName(subscribeName)) {
-        alert("Enter a valid name");
-        return;
+        nameInput.classList.add("input-error");
+        isValid = false;
     }
 
     if (!validateEmail(subscribeEmail)) {
-        alert("Enter a valid email");
-        return;
+        emailInput.classList.add("input-error");
+        isValid = false;
     }
 
+    if (!isValid) return;
+
     showpopup();
-}
-);
+});
+
 
 function validateName(name) {
     const regexName = /^[a-zA-Z]+(?:[\s'-][a-zA-Z]+)*$/;
@@ -42,16 +51,18 @@ function validateEmail(email) {
     const regexEmail = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     return regexEmail.test(email);
 }
-const pop = document.getElementById("pop-up");
-function showpopup() {
-    pop.hidden = false;
-    void pop.offsetWidth;
 
+function showpopup() {
+    pop.style.display = "block";
+    void pop.offsetWidth;
     pop.classList.add("show");
+
     setTimeout(() => {
         pop.classList.remove("show");
         setTimeout(() => {
-            pop.hidden = true;
+            pop.style.display = "none";
         }, 500);
-    }, 2000);
+    }, 2500);
 }
+
+
