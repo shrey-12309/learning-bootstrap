@@ -3,6 +3,12 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+
+    h2,
+    h3,
+    h4 {
+        font-family: "Inter", sans-serif;
+    }
 }
 
 .container {
@@ -729,29 +735,31 @@ body {
 }
 
 @media screen and (min-width:1440px) {
-    .hero-section {
-        .hero-txt {
-            .hero-txt-head {
-                font-size: 4.4rem;
+    .container {
+        .hero-section {
+            .hero-txt {
+                .hero-txt-head {
+                    font-size: 5rem;
 
-                img {
-                    width: 9rem;
+                    img {
+                        width: 9rem;
+                    }
+                }
+
+                .hero-txt-para {
+                    font-size: 1.2rem;
+                    color: #727272;
                 }
             }
-
-            .hero-txt-para {
-                font-size: 1.2rem;
-                color: #727272;
-            }
         }
-    }
 
-    .img-end {
-        height: 12rem;
-    }
+        .img-end {
+            height: 12rem;
+        }
 
-    .feature-boxes {
-        max-width: 25%;
+        .feature-boxes {
+            max-width: 25%;
+        }
     }
 }
 
@@ -802,16 +810,45 @@ body {
             }
         }
 
+        .solution-text {
+            h3 {
+                font-size: 3rem;
+            }
+        }
+
         .feature-boxes {
             p {
                 width: 75%;
             }
         }
 
+        .seo {
+            .seo-txt {
+                h3 {
+                    font-size: 3.2rem;
+                }
+
+                .seo-right {
+                    .box {
+                        .box-txt {
+                            h4 {
+                                font-size: 2rem;
+                            }
+
+                            p {
+                                font-size: 1.2rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+
+
         .img-end {
             height: 13rem;
         }
-
 
     }
 }
@@ -851,6 +888,29 @@ body {
                 // margin-left: 1rem;
                 margin-right: -2rem !important;
 
+            }
+        }
+    }
+
+    .card-section {
+        .container {
+            h2 {
+                font-size: 3.5rem;
+            }
+
+        }
+    }
+
+    footer {
+        .container {
+            h4 {
+                font-size: 44.42px;
+            }
+
+            ul {
+                li {
+                    font-size: 20px;
+                }
             }
         }
     }
